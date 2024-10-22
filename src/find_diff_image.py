@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 # Load two images
-image1 = cv2.imread('src/a.png')
-image2 = cv2.imread('src/c.png')
+image1 = cv2.imread('result/frame406.jpg')
+image2 = cv2.imread('result/frame348.jpg')
 # Convert images to grayscale
 gray1 = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(image2, cv2.COLOR_BGR2GRAY)
@@ -38,7 +38,7 @@ cv2.moveWindow(win_name, 50, 50)
 cv2.imshow(win_name, image1)
     
 # Resize the Window
-cv2.resizeWindow(win_name, 1920, 1080)
+cv2.resizeWindow(win_name, 960, 540)
 
 # Display the result
 # cv2.imshow('Difference', image1)
